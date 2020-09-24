@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: fira_sans_condensedregular ;
+}
+
+/*Font*/
+
+@font-face{
+    font-family: 'geosanslightregular';
+    src: url('font/geosanslight-webfont.woff2') format('woff2'),
+         url('font/geosanslight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dk_lemon_yellow_sunregular';
+    src: url('font/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
+         url('font/dk_lemon_yellow_sun-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+  font-family: 'exofontgras';
+  src: url('font/exo-variablefont_wght-webfont.woff') format('woff'),
+        url('font/exo-variablefont_wght-webfont.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face{
+  font-family: 'exofontit';
+  src: url('font/exo-italic-variablefont_wght-webfont.woff') format('woff')
+        url('font/exo-italic-variablefont_wght-webfont.woff2') format('woff2');
+        font-weight: normal;
+        font-style: italic;
+}
+
+@font-face {
+  font-family: 'museomodernosemibold';
+  src: url('font/museomoderno-variablefont_wght-webfont.woff2') format('woff2'),
+       url('font/museomoderno-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'fira_sans_condensedregular';
+  src: url('font/firasanscondensed-regular-webfont.woff2') format('woff2'),
+       url('font/firasanscondensed-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'straitregular';
+  src: url('font/strait-regular-webfont.woff2') format('woff2'),
+       url('font/strait-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+/* Partie de la page de Login */
+
+.l1{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(img/img1.jpg);
+  background-size: center;
+  background-size: cover;
+  position: absolute;
+}
+
+.formbox{
+  width: 380px;
+  height: 450px;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.bbox{
+  width: 240px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #5C7B8A;
+  border-radius: 30px;
+}
+
+.tbtn{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#btn{
+	top:0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, #5D6596 , #647CA1);
+	border-radius: 30px;
+	transition: .5s;
+}
+
+.inputg{
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+
+.inputf{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+.sbt{
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #5D6596 , #647CA1);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.cbox{
+  margin: 30px 10px 30px 0;
+}
+
+#tlog{
+  color: #777;
+  font-style: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+
+#login{
+  left: 50px;
+}
+
+#register{
+  left: 450px;
+}

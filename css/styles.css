@@ -1,0 +1,170 @@
+
+#title{
+    text-align: center;
+    color: white;
+    font-family: geosanslightregular;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+
+#navigation li {
+    display: inline;
+    font-family: dk_lemon_yellow_sunregular;
+    color: white;
+    margin-right: 45px ;
+    font-size: 20px;
+  }
+
+  #navigation {
+    margin: 0 ;
+    padding: 0 ;
+    list-style: none ;
+    text-align: center ;
+  }
+
+h1 {
+  font-family: exofontgras;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-family: museomodernosemibold;
+  color: whitesmoke;
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#txt{
+  font-family: exofontgras;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#txt2{
+  font-family: exofontgras;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+#txtc{
+  font-family: fira_sans_condensedregular;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#txt3{
+  font-family: straitregular;
+  font-size: 20px;
+  color:white;
+  text-align: center;
+  justify-content: center;
+}
+
+.marge {
+  margin-left: 25em;
+}
+
+
+#centre
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+IMG.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto }
+
+@font-face{
+    font-family: 'geosanslightregular';
+    src: url('font/geosanslight-webfont.woff2') format('woff2'),
+         url('font/geosanslight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  font-family: straitregular;
+  color:white;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+
+@font-face {
+    font-family: 'dk_lemon_yellow_sunregular';
+    src: url('font/dk_lemon_yellow_sun-webfont.woff2') format('woff2'),
+         url('font/dk_lemon_yellow_sun-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+  font-family: 'exofontgras';
+  src: url('font/exo-variablefont_wght-webfont.woff') format('woff'),
+        url('font/exo-variablefont_wght-webfont.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+}
+
+@font-face{
+  font-family: 'exofontit';
+  src: url('font/exo-italic-variablefont_wght-webfont.woff') format('woff')
+        url('font/exo-italic-variablefont_wght-webfont.woff2') format('woff2');
+        font-weight: normal;
+        font-style: italic;
+}
+
+@font-face {
+  font-family: 'museomodernosemibold';
+  src: url('font/museomoderno-variablefont_wght-webfont.woff2') format('woff2'),
+       url('font/museomoderno-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'fira_sans_condensedregular';
+  src: url('font/firasanscondensed-regular-webfont.woff2') format('woff2'),
+       url('font/firasanscondensed-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'straitregular';
+  src: url('font/strait-regular-webfont.woff2') format('woff2'),
+       url('font/strait-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}

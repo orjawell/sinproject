@@ -1,0 +1,65 @@
+
+<?php
+if ($_POST['sgbtn'] !== null) {
+    require 'dbh.inc.php';
+
+    $username=$_POST['susername'];
+    $email=$_POST['semail'];
+    $passwd=$_POST['psswd'];
+    $passwdr=$_POST['psswdre'];
+
+    if(!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $username )) {
+        header("Location: ../index.php?error=invalidmail&susername=".$username);
+        exit();
+    }
+
+    else if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header("Location: ../index.php?error=invalidmail&susername=".$username);
+        exit();
+    }
+    else if(!preg_match("/^[a-zA-Z0-9]*$/", $username)){
+        header("Location: ../index.php?error=invalidmail&susername=".$username);
+        exit();  
+    }
+    else if($passwd == $passwdr) {
+        header("Location: Location: ../index.php?error=invalidmail&susername=".$username);
+    }
+
+    else{
+        $sql = "SELECT uidUsers FORM users WHERE uidUsers=?";
+        $stmt = mysqli_stmt_init($conn);
+        if (!mysqli_stmt_prepare($stmt, $sql)) {
+            header("Location: ../index.php?error=sqlerror");
+            exit(); 
+        }
+        
+        else{
+            mysqli_stmt_bind_param($stmt, "s", $username);
+            mysqli_stmt_execute($stmt);
+            mysqli_stmt_store_result($stmt);
+            $resultcheck = mysqli_stmt_num_rows($stmt);
+            if($resultcheck > 0){
+                header("Location: ../index.php?error=usertaken");
+                exit();
+            }
+            else{
+
+                try{
+                    $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
+                    $stmt=mysqli_stmt_init($conn);
+                    header("Location: ../index.php?error=sqlerror1");
+                    exit();
+                }
+
+                finally{
+                    $hashpwd = password_hash($passwd, PASSWORD_DEFAULT);
+
+                    mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashpasswd);
+                    mysqli_stmt_execute($stmt);
+                    header("Location: ../index.php?signup=sucess");
+                    exit();
+                }
+            }
+        }
+    }
+}
